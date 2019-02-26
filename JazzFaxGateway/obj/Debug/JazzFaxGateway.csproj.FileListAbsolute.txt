@@ -1,0 +1,6 @@
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\bin\Debug\JazzFaxGateway.exe.config
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\bin\Debug\JazzFaxGateway.exe
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\bin\Debug\JazzFaxGateway.pdb
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\obj\Debug\JazzFaxGateway.exe
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\obj\Debug\JazzFaxGateway.pdb
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGateway\obj\Debug\JazzFaxGateway.csprojResolveAssemblyReference.cache

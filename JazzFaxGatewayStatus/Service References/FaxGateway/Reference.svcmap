@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9250072f-e595-435b-9276-6fde16f2bbf5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://faxgatewaytv.ubcmain.com/service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="59cde800-35cc-4fdc-8fbb-b1611a436162" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?disco" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="2ee2fdb2-f3ae-4eeb-b899-7ebd644ca136" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd5" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="8d1e37b5-0810-4845-93fe-12608242da77" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd3" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="47fe1d0a-69bc-48f7-9028-b41cf6b01e86" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd1" />
+    <MetadataFile FileName="service3.xsd" MetadataType="Schema" ID="e2f32850-d0d5-4d25-a8da-a54f41493ef5" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd4" />
+    <MetadataFile FileName="service4.xsd" MetadataType="Schema" ID="ed06f0b5-64db-4706-a1b1-fbd7b1526f15" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd2" />
+    <MetadataFile FileName="service5.xsd" MetadataType="Schema" ID="7df94407-8575-487a-821b-0241412df889" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?xsd=xsd0" />
+    <MetadataFile FileName="FaxService.wsdl" MetadataType="Wsdl" ID="23376d48-62e8-46c8-8170-c170c78ee286" SourceId="1" SourceUrl="http://faxgatewaytv.ubcmain.com/service?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

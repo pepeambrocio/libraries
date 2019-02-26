@@ -1,0 +1,12 @@
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.exe.config
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.exe
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.pdb
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.exe
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.pdb
+C:\Users\EJ2548\Source\Repos\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.csprojResolveAssemblyReference.cache
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.exe.config
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.exe
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\bin\Debug\JazzFaxGatewayStatus.pdb
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.exe
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.pdb
+C:\Users\EJ6899\Documents\JazzXyrem\JazzFaxGatewayStatus\obj\Debug\JazzFaxGatewayStatus.csprojResolveAssemblyReference.cache

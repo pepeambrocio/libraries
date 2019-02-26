@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FaxService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd2" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/UBC.Services.FaxService.Api.Helpers" />
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UBC.Services.FaxService.Api.Data.Dto" />
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/UBC.Services.FaxService.Api.Data.Dto.Document" />
+      <xsd:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFaxService_SendFax_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFax" />
+  </wsdl:message>
+  <wsdl:message name="IFaxService_SendFax_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFaxService_GetFaxStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFaxStatus" />
+  </wsdl:message>
+  <wsdl:message name="IFaxService_GetFaxStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFaxStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFaxService">
+    <wsdl:operation name="SendFax">
+      <wsdl:input wsam:Action="http://tempuri.org/IFaxService/SendFax" message="tns:IFaxService_SendFax_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IFaxService/SendFaxResponse" message="tns:IFaxService_SendFax_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFaxStatus">
+      <wsdl:input wsam:Action="http://tempuri.org/IFaxService/GetFaxStatus" message="tns:IFaxService_GetFaxStatus_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IFaxService/GetFaxStatusResponse" message="tns:IFaxService_GetFaxStatus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFaxService" type="tns:IFaxService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendFax">
+      <soap:operation soapAction="http://tempuri.org/IFaxService/SendFax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFaxStatus">
+      <soap:operation soapAction="http://tempuri.org/IFaxService/GetFaxStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FaxService">
+    <wsdl:port name="BasicHttpBinding_IFaxService" binding="tns:BasicHttpBinding_IFaxService">
+      <soap:address location="http://faxgatewaytv.ubcmain.com/service" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

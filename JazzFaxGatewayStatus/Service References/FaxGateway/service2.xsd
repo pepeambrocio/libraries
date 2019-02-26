@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UBC.Services.FaxService.Api.Helpers" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UBC.Services.FaxService.Api.Helpers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://faxgatewaytv.ubcmain.com/service?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="FaxErrorStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="fecNone" />
+      <xs:enumeration value="fecBusy" />
+      <xs:enumeration value="fecTransmissionError" />
+      <xs:enumeration value="fecPoorQuality" />
+      <xs:enumeration value="fecNoAnswer" />
+      <xs:enumeration value="fecBadFCS" />
+      <xs:enumeration value="fecBadConvert" />
+      <xs:enumeration value="fecMakeFCS" />
+      <xs:enumeration value="fecCantSchedule" />
+      <xs:enumeration value="fecUnknown" />
+      <xs:enumeration value="fecHuman" />
+      <xs:enumeration value="fecGroup2" />
+      <xs:enumeration value="fecLocalInUse" />
+      <xs:enumeration value="fecLineProblem" />
+      <xs:enumeration value="fecBadPaper" />
+      <xs:enumeration value="fecBadSignature" />
+      <xs:enumeration value="fecNoSignatureAuthorization" />
+      <xs:enumeration value="fecDiscarded">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">18</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecBadPhone">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">19</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecInvalidCode">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">21</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecBadCode">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">22</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecBadOCR">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">23</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecBadPrint">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">24</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecNoLibraryDocumentAuthorization">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">25</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecViewStar1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">26</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecDisapproved">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">27</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecEmailDeliveryError">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">28</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecGetStatusAttemptsExhausted">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">29</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="fecNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">99</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FaxErrorStatus" nillable="true" type="tns:FaxErrorStatus" />
+  <xs:simpleType name="FaxStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="fsUnborn" />
+      <xs:enumeration value="fsNeedsFCS" />
+      <xs:enumeration value="fsNeedsConversion" />
+      <xs:enumeration value="fsNeedsToBeSent" />
+      <xs:enumeration value="fsInConversion" />
+      <xs:enumeration value="fsInSend" />
+      <xs:enumeration value="Successful" />
+      <xs:enumeration value="fsManualFCS" />
+      <xs:enumeration value="fsInSchedule" />
+      <xs:enumeration value="Failed" />
+      <xs:enumeration value="fsDuplicate" />
+      <xs:enumeration value="Error" />
+      <xs:enumeration value="fsNeedsAttention" />
+      <xs:enumeration value="fsNeedsAttachment" />
+      <xs:enumeration value="fsHeldForPreview" />
+      <xs:enumeration value="fsInOCR" />
+      <xs:enumeration value="fsInPrint" />
+      <xs:enumeration value="fsQueuedForPrinting" />
+      <xs:enumeration value="fsQueuedForOCR" />
+      <xs:enumeration value="fsInValidation" />
+      <xs:enumeration value="fsInApproval" />
+      <xs:enumeration value="fsNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">99</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FaxStatus" nillable="true" type="tns:FaxStatus" />
+</xs:schema>
